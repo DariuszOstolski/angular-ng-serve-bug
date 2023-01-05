@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+  @apply font-sans;
+}
+
+app-root {
+  display: grid;
+  height: 100%;
+  grid-template-columns: [col-1-start] 1fr [col-1-end];
+  grid-template-rows: 3.5rem auto;
+}
+
+header {
+  grid-column-start: col-1-start;
+  grid-column-end: col-1-end;
+}
+
+main {
+  grid-column-start: col-1-start;
+  grid-column-end: col-1-end;
+  overflow-y: auto;
+}
+
+@layer base {
+  :root {
+      --color-text-base:  30, 41, 59;
+      --color-text-muted: 71, 85, 105;
+      --color-text-accent: 51, 65, 85;
+      --color-text-code: 209, 213, 219;
+      --color-background-base: 249, 250, 251;
+      --color-background-code: 31, 41, 55;
+  }
+}
