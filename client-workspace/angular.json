@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/memcrs",
+            "outputPath": "../public",
             "index": "apps/src/index.html",
             "main": "apps/src/main.ts",
             "polyfills": [
