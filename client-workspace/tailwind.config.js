@@ -13,11 +13,11 @@ function withOpacity(variableName) {
 
 module.exports = {
   content: [
-    "./src/**/*.{html,ts}",
+    "./apps/src/**/*.{html,ts}",
   ],
   purge: {
     enabled: true,
-    content: ["./**/src/**/*.{html,ts,scss}"],
+    content: ["./apps/src/**/*.{html,ts,scss}"],
   },
   mode: "jit",
   darkMode: "class", // or 'media' or 'class'
